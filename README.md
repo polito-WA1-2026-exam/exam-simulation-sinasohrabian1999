@@ -83,3 +83,7 @@ A single-player web game inspired by "Race the Rails". Navigate a fictional unde
 ---
 
 
+## AI Usage
+I used AI for the UI and CSS generating.
+I used AI for git.
+I Used for verify to my final solution if it passes the requirements of the project or not. 
