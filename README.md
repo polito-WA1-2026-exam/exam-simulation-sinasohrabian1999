@@ -14,7 +14,7 @@ A single-player web game inspired by "Race the Rails". Navigate a fictional unde
 | `DELETE` | `/api/sessions/current` | Yes | Logout. Returns 204. |
 | `GET` | `/api/sessions/current` | No | Returns current user `{ id, username }` or `null` if not logged in. |
 | `GET` | `/api/network` | Yes | Returns full network: `{ lines, stations, segments }`. |
-| `POST` | `/api/games` | Yes | Starts a new game. Returns `{ startStation, endStation }` (random pair ≥ 3 segments apart). |
+| `POST` | `/api/games` | Yes | Starts a new game. Returns `{ startStation, endStation }` (random pair ≥ 3 s apart). |
 | `POST` | `/api/games/submit` | Yes | Submits a route. Body: `{ route, startStationId, endStationId }`. Returns `{ valid, score, steps, reason? }`. |
 | `GET` | `/api/ranking` | Yes | Returns best score per player: `[{ username, best_score, games_played }]`. |
 
@@ -24,7 +24,7 @@ A single-player web game inspired by "Race the Rails". Navigate a fictional unde
 |-------|---------|
 | `lines` | Metro lines (id, name, color hex). |
 | `stations` | Metro stations (id, name). |
-| `segments` | Directed connections between stations on a specific line (line_id, station_a_id, station_b_id, position). |
+| `s` | Directed connections between stations on a specific line (line_id, station_a_id, station_b_id, position). |
 | `events` | Random in-game events (id, description, effect integer −4..+4). |
 | `users` | Registered users (id, username, password_hash, salt). |
 | `games` | Completed game records (user_id, start_station_id, end_station_id, score, completed_at). |

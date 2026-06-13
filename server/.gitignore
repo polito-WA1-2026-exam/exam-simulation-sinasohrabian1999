@@ -1,12 +1,7 @@
 node_modules/
-*.db
-*.db-shm
-*.db-wal
 .DS_Store
-dist/
-node_modules/
+Desktop.ini
+Thumbs.db
 lastrace.db
 lastrace.db-shm
 lastrace.db-wal
-.DS_Store
-__MACOSX/
